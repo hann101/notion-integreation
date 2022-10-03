@@ -1,0 +1,28 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  Github-Auth: # id of input
+    description: 'Github User Authentication'
+    required: true
+
+  Github-Id: # id of input
+    description: 'Notion DB Authentication'
+    required: true
+
+  Github-Repo: # id of input
+    description: 'Github Repository Name Authentication'
+    required: true
+
+  Notion-Auth: # id of input
+    description: 'Notion User Authentication'
+    required: true
+  Notion-DB: # id of input
+    description: 'Notion DB Authentication'
+    required: true
+
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
